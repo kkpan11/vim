@@ -1,6 +1,6 @@
 /* getchar.c */
 char_u *get_recorded(void);
-char_u *get_inserted(void);
+string_T get_inserted(void);
 int stuff_empty(void);
 int readbuf1_empty(void);
 void typeahead_noflush(int c);
@@ -30,7 +30,7 @@ int typebuf_changed(int tb_change_cnt);
 int typebuf_typed(void);
 int typebuf_maplen(void);
 void del_typebuf(int len, int offset);
-void gotchars_nop(void);
+void gotchars_ignore(void);
 void ungetchars(int len);
 int save_typebuf(void);
 void save_typeahead(tasave_T *tp);
@@ -51,6 +51,7 @@ void f_getchar(typval_T *argvars, typval_T *rettv);
 void f_getcharstr(typval_T *argvars, typval_T *rettv);
 void f_getcharmod(typval_T *argvars, typval_T *rettv);
 void parse_queued_messages(void);
+int key_protocol_enabled(void);
 void vungetc(int c);
 int fix_input_buffer(char_u *buf, int len);
 int input_available(void);

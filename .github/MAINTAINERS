@@ -134,6 +134,8 @@ runtime/ftplugin/asy.vim		@avidseeker
 runtime/ftplugin/autohotkey.vim		@telemachus
 runtime/ftplugin/awk.vim		@dkearns
 runtime/ftplugin/basic.vim		@dkearns
+runtime/ftplugin/brighterscript.vim	@ribru17
+runtime/ftplugin/brightscript.vim	@ribru17
 runtime/ftplugin/bst.vim		@tpope
 runtime/ftplugin/c3.vim		@ttytm
 runtime/ftplugin/cabal.vim		@ribru17
@@ -681,7 +683,6 @@ runtime/tutor/tutor.ru.cp1251		@RestorerZ
 runtime/tutor/tutor.ru.utf-8		@RestorerZ
 src/iscygpty.*				@k-takata
 src/libvterm/				@leonerd
-src/po/am.po				@gagikh
 src/po/ca.po				@nfdisco
 src/po/de.po				@chrisbra
 src/po/eo.po				@dpelle
@@ -689,6 +690,7 @@ src/po/es.po				@victorhck
 src/po/fi.po				@flammie
 src/po/fr.po				@dpelle
 src/po/ga.po				@kscanne
+src/po/hy.po				@gagikh
 src/po/it.po				@azc100
 src/po/ja.po				@k-takata
 src/po/ru.po				@RestorerZ

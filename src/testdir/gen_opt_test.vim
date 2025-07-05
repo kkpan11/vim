@@ -115,6 +115,7 @@ let test_values = {
       \ 'winminheight': [[0, 1], [-1]],
       \ 'winminwidth': [[0, 1, 10], [-1]],
       \ 'winwidth': [[1, 10, 999], [-1, 0]],
+      \ 'wltimeoutlen': [[1, 10, 999],[-1]],
       \
       "\ string options
       \ 'ambiwidth': [['', 'single', 'double'], ['xxx']],
@@ -148,6 +149,7 @@ let test_values = {
       \		'autoselectplus', 'autoselectml', 'html', 'exclude:vimdisplay',
       \		'autoselect,unnamed', 'unnamed,exclude:.*'],
       \		['xxx', 'exclude:\\ze*', 'exclude:\\%(']],
+      \ 'clipmethod': [['wayland', 'x11', 'wayland,x11', ''],['xxx', '--', 'wayland,,', ',x11']],
       \ 'colorcolumn': [['', '8', '+2', '1,+1,+3'], ['xxx', '-a', '1,', '1;']],
       \ 'comments': [['', 'b:#', 'b:#,:%'], ['xxx', '-']],
       \ 'commentstring': [['', '/*\ %s\ */'], ['xxx']],
@@ -195,9 +197,9 @@ let test_values = {
       \		['xxx']],
       \ 'eadirection': [['', 'both', 'ver', 'hor'], ['xxx', 'ver,hor']],
       \ 'encoding': [['latin1'], ['xxx', '']],
-      \ 'eventignore': [['', 'WinEnter', 'WinLeave,winenter', 'all,WinEnter'],
+      \ 'eventignore': [['', 'WinEnter', 'WinLeave,winenter', 'all,WinEnter', 'all,-WinLeave'],
       \		['xxx']],
-      \ 'eventignorewin': [['', 'WinEnter', 'WinLeave,winenter', 'all,WinEnter'],
+      \ 'eventignorewin': [['', 'WinEnter', 'WinLeave,winenter', 'all,WinEnter', 'all,-WinLeave'],
       \		['xxx', 'WinNew']],
       \ 'fileencoding': [['', 'latin1', 'xxx'], []],
       \ 'fileformat': [['', 'dos', 'unix', 'mac'], ['xxx']],
